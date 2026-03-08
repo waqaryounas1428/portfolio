@@ -1,0 +1,156 @@
+/* ===== Section Background ===== */
+
+body{
+background:linear-gradient(135deg,#f0f9ff 0%, #e0f2fe 100%);
+font-family:system-ui, -apple-system, sans-serif;
+}
+
+
+/* ===== Scroll Animation ===== */
+
+.scroll-effect{
+opacity:0;
+transform:translateY(40px);
+filter:blur(6px);
+transition:all .8s ease;
+}
+
+.scroll-effect.show{
+opacity:1;
+transform:translateY(0);
+filter:blur(0);
+}
+
+
+/* ===== Name Title ===== */
+
+.name-title{
+margin-top:80px;
+margin-left: 90px;
+}
+
+.name{
+line-height:1.5;
+}
+
+.hello{
+font-size:32px;
+color:#475569;
+}
+
+.user-name{
+font-size:46px;
+font-weight:700;
+background: linear-gradient(135deg, #3b82f6, #2563eb);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+letter-spacing:1px;
+}
+
+.titles{
+font-size:20px;
+letter-spacing:4px;
+color:#64748b;
+}
+
+
+/* ===== Layout ===== */
+
+.content-wrapper{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:60px;
+padding:60px 80px;
+flex-wrap:wrap;
+}
+
+
+/* ===== Intro Card ===== */
+
+.intro-left{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.intro{
+background:rgba(255,255,255,0.9);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0, 0, 0, 0.08);
+max-width:650px;
+font-size:18px;
+line-height:1.7;
+color:#334155;
+transition:all .3s ease;
+border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.intro:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 40px rgba(59, 130, 246, 0.15);
+border-color: rgba(59, 130, 246, 0.3);
+}
+
+.highlight{
+color:#3b82f6;
+font-weight:700;
+}
+
+
+/* ===== Image ===== */
+
+.img-right{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-right img{
+width:340px;
+height:500px;
+object-fit:cover;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0, 0, 0, 0.1);
+transition:all .4s ease;
+border: 3px solid rgba(59, 130, 246, 0.2);
+}
+
+.hero-right img:hover{
+transform:scale(1.05) rotate(-1deg);
+box-shadow:0 20px 50px rgba(59, 130, 246, 0.25);
+border-color: rgba(59, 130, 246, 0.4);
+}
+
+
+/* ===== Responsive ===== */
+
+@media (max-width:900px){
+
+.content-wrapper{
+flex-direction:column;
+padding:40px 20px;
+gap:40px;
+}
+
+.hero-right img{
+width:280px;
+height:420px;
+}
+
+.user-name{
+font-size:36px;
+}
+
+.titles{
+font-size:18px;
+}
+
+.intro{
+font-size:16px;
+}
+
+}
