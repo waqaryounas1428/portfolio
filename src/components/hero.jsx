@@ -1,6 +1,6 @@
 import pic1 from "../images/1.jpg";
 import pic2 from "../images/2.jpg";
-import "./hero.css";
+import "./Hero.css";
 
 export const Hero = () => {
   return (
