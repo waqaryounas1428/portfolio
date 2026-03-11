@@ -13,7 +13,7 @@ export const Timeline = () => {
             <FaCode />
           </div>
           <div className="timeline-content">
-            <span className="timeline-date">2024 - Present</span>
+            <span className="timeline-date">2025 - Present</span>
             <h3>MERN Stack Training</h3>
             <p>
               Intensive backend development training at EVS Lahore, focusing on Node.js,
@@ -27,7 +27,7 @@ export const Timeline = () => {
             <FaBriefcase />
           </div>
           <div className="timeline-content">
-            <span className="timeline-date">2023 - 2024</span>
+            <span className="timeline-date">2024 - 2025</span>
             <h3>Frontend Development</h3>
             <p>
               Built modern, responsive web applications using React, HTML5, CSS3, and
@@ -41,7 +41,7 @@ export const Timeline = () => {
             <FaGraduationCap />
           </div>
           <div className="timeline-content">
-            <span className="timeline-date">2020 - 2024</span>
+            <span className="timeline-date">2022 - 2026</span>
             <h3>Bachelor's Degree</h3>
             <p>
               Completed Bachelor of Science in Information Technology (BSIT) with strong
@@ -55,7 +55,7 @@ export const Timeline = () => {
             <FaCode />
           </div>
           <div className="timeline-content">
-            <span className="timeline-date">2019 - 2020</span>
+            <span className="timeline-date">2022 - 2023</span>
             <h3>Programming Fundamentals</h3>
             <p>
               Started programming journey learning core concepts, algorithms, and
