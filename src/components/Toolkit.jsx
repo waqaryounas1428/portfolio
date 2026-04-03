@@ -62,10 +62,10 @@ export const Toolkit = () => {
           <h3>Tools & Deployment</h3>
           <div className="tools">
             <span>VS Code</span>
-            <span><SiPostman /> Postman</span>
+            {/* <span><SiPostman /> Postman</span> */}
             <span><SiVercel /> Vercel</span>
             <span><SiNetlify /> Netlify</span>
-            <span>NPM</span>
+            {/* <span>NPM</span> */}
           </div>
         </div>
 

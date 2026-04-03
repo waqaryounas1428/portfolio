@@ -15,8 +15,10 @@ const projects = [
     tag: "Research Project",
     title: " Business Landing Website",
     tech: [""],  //HTML", "CSS", "JavaScript
-    short: "A fully responsive business website showcasing products, services, gallery, testimonials, FAQ, and contact features with smooth animations.",
-    detail: "Built for Noor Marble & Granite Factory using HTML, CSS, and Vanilla JavaScript. Features a clean component-based structure, scroll animations via the Intersection Observer API, and optimized performance across all devices.",
+    short: "A modern, fully responsive single-page business website for Noor Marble and Granite Factory, located in Bhakkar, Punjab, Pakistan. Built with React.js, HTML, CSS, and JavaScript.",
+    detail: "The site showcases the factory's premium marble and granite products through 13 sections: Hero, About, Products, Gallery, Services, Statistics, Process, Testimonials, FAQ, CTA, Why Choose Us, Contact, and Footer.",
+    live: "https://noor-marble-git-main-waqaryounas1428s-projects.vercel.app/",
+    github: "https://github.com/waqaryounas1428/Noor-Marble",
   },
   {
     images: [w1, w2, w3, w4],
@@ -70,6 +72,19 @@ const ProjectCard = ({ project }) => {
         <button className="see-more" onClick={() => setShowMore(!showMore)}>
           {showMore ? "Show Less ↑" : "Read More ↓"}
         </button>
+
+        <div className="card-links">
+          {project.live && (
+            <a href={project.live} target="_blank" rel="noopener noreferrer" className="card-link live">
+              Live Demo
+            </a>
+          )}
+          {project.github && (
+            <a href={project.github} target="_blank" rel="noopener noreferrer" className="card-link github">
+              GitHub
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
