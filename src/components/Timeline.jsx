@@ -16,12 +16,11 @@ export const Timeline = () => {
             <span className="timeline-date">2025 - Present</span>
             <h3>MERN Stack Training</h3>
             <p>
-              Intensive backend development training at EVS Lahore, focusing on Node.js,
+              Intensive backend development training at <span className="highlight">EVS Lahore</span>, focusing on Node.js,
               Express.js, and MongoDB to build scalable full-stack applications.
             </p>
           </div>
         </div>
-
         <div className="timeline-item scroll-effect">
           <div className="timeline-icon">
             <FaBriefcase />
