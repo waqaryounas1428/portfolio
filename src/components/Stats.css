@@ -1,6 +1,6 @@
-/* ===== Section ===== */
+/* ===== Section (Reduced Height) ===== */
 .stats-section {
-  padding: 80px 10%;
+  padding: 40px 10%;
   background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
 }
 
@@ -8,7 +8,7 @@
 .stats-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 20px;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -17,10 +17,10 @@
 .stat-card {
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
-  padding: 44px 24px;
-  border-radius: 20px;
+  padding: 28px 16px;
+  border-radius: 16px;
   text-align: center;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
   border: 1px solid rgba(59, 130, 246, 0.1);
   position: relative;
@@ -34,7 +34,7 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.04) 0%, transparent 70%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -44,93 +44,91 @@
 }
 
 .stat-card:hover {
-  transform: translateY(-8px) scale(1.04);
-  box-shadow: 0 16px 40px rgba(59, 130, 246, 0.18);
-  border-color: rgba(59, 130, 246, 0.28);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.15);
 }
 
 /* ===== Icon ===== */
 .stat-icon {
-  font-size: 44px;
+  font-size: 32px;
   color: #3b82f6;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
 
 .stat-card:hover .stat-icon {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.1) rotate(3deg);
 }
 
 /* ===== Number ===== */
 .stat-number {
-  font-size: 46px;
+  font-size: 34px;
   font-weight: 800;
   background: linear-gradient(135deg, #3b82f6, #2563eb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   line-height: 1.1;
 }
 
 /* ===== Label ===== */
 .stat-label {
-  font-size: 14px;
+  font-size: 12px;
   color: #64748b;
-  font-weight: 500;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.5px;
 }
 
-/* ===== Large Desktop (1400px+) ===== */
-@media (min-width: 1400px) {
-  .stats-section { padding: 100px 12%; }
-  .stats-container { max-width: 1100px; gap: 40px; }
-  .stat-number { font-size: 52px; }
-  .stat-icon { font-size: 50px; }
-  .stat-label { font-size: 15px; }
-}
-
-/* ===== Tablet Landscape (1024px) ===== */
+/* ===== Responsive ===== */
 @media (max-width: 1024px) {
-  .stats-section { padding: 70px 6%; }
-  .stat-card { padding: 36px 20px; }
-  .stat-number { font-size: 40px; }
-  .stat-icon { font-size: 38px; }
-}
-
-/* ===== Tablet Portrait (768px) ===== */
-@media (max-width: 768px) {
-  .stats-section { padding: 60px 6%; }
-  .stats-container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  .stats-section {
+    padding: 50px 6%;
   }
-  .stat-card { padding: 28px 14px; }
-  .stat-number { font-size: 32px; }
-  .stat-icon { font-size: 32px; margin-bottom: 12px; }
-  .stat-label { font-size: 12px; letter-spacing: 0.5px; }
+  .stat-number {
+    font-size: 30px;
+  }
+  .stat-icon {
+    font-size: 28px;
+  }
 }
 
-/* ===== Mobile (480px) ===== */
-@media (max-width: 480px) {
-  .stats-section { padding: 50px 5%; }
+@media (max-width: 768px) {
   .stats-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
   }
+
   .stat-card {
     padding: 22px 10px;
-    border-radius: 14px;
   }
-  .stat-number { font-size: 26px; }
-  .stat-icon { font-size: 26px; margin-bottom: 10px; }
-  .stat-label { font-size: 11px; letter-spacing: 0; }
+
+  .stat-number {
+    font-size: 26px;
+  }
+
+  .stat-icon {
+    font-size: 24px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+  }
 }
 
-/* ===== Small Mobile (360px) ===== */
-@media (max-width: 360px) {
-  .stat-number { font-size: 22px; }
-  .stat-icon { font-size: 22px; }
-  .stat-label { font-size: 10px; }
-  .stat-card { padding: 18px 8px; }
+@media (max-width: 480px) {
+  .stats-section {
+    padding: 30px 5%;
+  }
+
+  .stat-number {
+    font-size: 22px;
+  }
+
+  .stat-icon {
+    font-size: 20px;
+  }
+
+  .stat-card {
+    padding: 18px 8px;
+    border-radius: 12px;
+  }
 }
